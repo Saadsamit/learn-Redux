@@ -7,7 +7,7 @@ import {
 
 const Count = () => {
   const dispatch = useDispatch();
-  const { value } = useSelector((state) => state.Counter);
+  const { value } = useSelector((state) => state.counter);
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(incrementByAmount(parseInt(e.target.number.value)));
